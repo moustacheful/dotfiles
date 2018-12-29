@@ -1,0 +1,49 @@
+[
+  {
+    "name": "Area screenshot",
+    "command": "gnome-screenshot -a"
+  },
+  {
+    "name": "Window screenshot",
+    "command": "gnome-screenshot -w"
+  },
+  {
+    "name": "Start redshift",
+    "command": "redshift"
+  },
+  {
+    "name": "Stop redshift",
+    "command": "pkill -f redshift"
+  },
+  {
+    "name": "Power off",
+    "confirm": true,
+    "command": "systemctl poweroff"
+  },
+  {
+    "name": "Reboot",
+    "confirm": true,
+    "command": "systemctl reboot"
+  },
+  {
+    "name": "Suspend",
+    "confirm": true,
+    "command": "systemctl suspend"
+  },
+  {
+    "name": "Lock",
+    "command": "i3lock"
+  },
+  {
+    "name": "Reload dunst",
+    "command": "pkill dunst && dunst -config ~/.config/.dunstrc & notify-send 'Dunst reloaded'"
+  },
+  {
+    "name": "Pause notifications",
+    "command": "notify-send DUNST_COMMAND_PAUSE"
+  },
+  {
+    "name": "Resume notifications",
+    "command": "notify-send DUNST_COMMAND_RESUME"
+  }
+]

@@ -1,0 +1,3 @@
+[submodule "bin/myrmidon"]
+	path = bin/myrmidon
+	url = https://github.com/moustacheful/myrmidon.git
