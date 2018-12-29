@@ -54,7 +54,7 @@ exec --no-startup-id nitrogen --restore
 exec --no-startup-id dunst -config ~/.config/.dunstrc
 
 ########## Keybindings ##########
-bindsym $mod+p exec ~/bin/myrmidon.sh
+bindsym $mod+p exec ~/bin/myrmidon/myrmidon.sh
 bindsym $mod+l exec i3lock # Easier locking
 
 ### Backlight ###
