@@ -1,6 +1,7 @@
 {
-  "accent": "#ff7c0a",
+  "accent": "#f4d341",
   "background": "#222222",
   "light": "#eaeaea",
-  "danger": "#A54242"
+  "danger": "#A54242",
+  "useGaps": true
 }

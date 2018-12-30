@@ -12,14 +12,14 @@
     selected-urgent-foreground:  #222222;
     urgent-foreground:           rgb(234, 234, 234);
     alternate-urgent-background: rgb(44, 44, 44);
-    active-foreground:           rgb(255, 124, 10);
+    active-foreground:           rgb(244, 211, 65);
     lightbg:                     rgb(234, 234, 234);
     selected-active-foreground:  #222222;
     alternate-active-background: rgb(44, 44, 44);
     background:                  rgb(34, 34, 34);
     alternate-normal-foreground: @foreground;
     normal-background:           @background;
-    selected-normal-background:  rgb(255, 124, 10);
+    selected-normal-background:  rgb(244, 211, 65);
     spacing:                     2;
     separatorcolor:              rgb(34, 34, 34);
     urgent-background:           rgb(34, 34, 34);
@@ -28,7 +28,7 @@
     background-color:            rgb(34, 34, 34);
     alternate-active-foreground: @active-foreground;
     active-background:           rgb(34, 34, 34);
-    selected-active-background:  rgb(255, 124, 10);
+    selected-active-background:  rgb(244, 211, 65);
 }
 #window {
     background-color: @background;
