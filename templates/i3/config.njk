@@ -26,9 +26,9 @@ set $down k
 set $left j
 set $right l
 
-set $accent #ff7c0a
-set $background #222222
-set $foreground #222222
+set $accent {{accent}}
+set $background {{background}}
+set $foreground {{light if accent | contrast(light) > 8 else background}}
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -217,20 +217,20 @@ bar {
         separator_symbol "|"
         colors {
                 background $background
-                statusline #888888
-                separator  #555555
+                statusline {{background | lighten(3) | hex}}
+                separator  {{background | lighten(1.5) | hex}}
 
                 focused_workspace  $accent $accent $foreground
                 active_workspace   $accent $background $accent
-                inactive_workspace $background $background #eaeaea
-                binding_mode       $accent $background #eaeaea
+                inactive_workspace $background $background {{light}}
+                binding_mode       $accent $background {{light}}
                 urgent_workspace   $accent $background $accent
         }
 }
 
 ########## Styling ##########
 
-client.focused          $accent $accent $background #FFDFC4 $accent
+client.focused          $accent $accent $background {{accent | lighten(0.7) | hex}} $accent
 client.focused_inactive $background $background $accent $background
 client.unfocused        $background $background $accent #ff0000
 client.urgent           $accent $background $accent $accent

@@ -5,30 +5,30 @@
  ***********************************************/
 
 * {
-    selected-normal-foreground:  rgb(34, 34, 34);
-    foreground:                  rgb(234, 234, 234);
+    selected-normal-foreground:  {{background | rgb}};
+    foreground:                  {{light | rgb}};
     normal-foreground:           @foreground;
-    alternate-normal-background: rgb(37, 37, 37);
-    selected-urgent-foreground:  #222222;
-    urgent-foreground:           rgb(234, 234, 234);
-    alternate-urgent-background: rgb(44, 44, 44);
-    active-foreground:           rgb(255, 124, 10);
-    lightbg:                     rgb(234, 234, 234);
-    selected-active-foreground:  #222222;
-    alternate-active-background: rgb(44, 44, 44);
-    background:                  rgb(34, 34, 34);
+    alternate-normal-background: {{background | lighten(0.1) | rgb}};
+    selected-urgent-foreground:  {{light if (accent | contrast(light) > 8) else background}};
+    urgent-foreground:           {{light | rgb}};
+    alternate-urgent-background: {{background | lighten(0.3) | rgb}};
+    active-foreground:           {{accent | rgb}};
+    lightbg:                     {{light |  rgb}};
+    selected-active-foreground:  {{light if (accent | contrast(light) > 8) else background}};
+    alternate-active-background: {{background | lighten(0.3) | rgb}};
+    background:                  {{background | rgb}};
     alternate-normal-foreground: @foreground;
     normal-background:           @background;
-    selected-normal-background:  rgb(255, 124, 10);
+    selected-normal-background:  {{accent | rgb}};
     spacing:                     2;
-    separatorcolor:              rgb(34, 34, 34);
-    urgent-background:           rgb(34, 34, 34);
-    selected-urgent-background:  rgb(165, 66, 66);
+    separatorcolor:              {{background | rgb}};
+    urgent-background:           {{background | rgb}};
+    selected-urgent-background:  {{danger | rgb}};
     alternate-urgent-foreground: @urgent-foreground;
-    background-color:            rgb(34, 34, 34);
+    background-color:            {{background | rgb}};
     alternate-active-foreground: @active-foreground;
-    active-background:           rgb(34, 34, 34);
-    selected-active-background:  rgb(255, 124, 10);
+    active-background:           {{background | rgb}};
+    selected-active-background:  {{accent | rgb}};
 }
 #window {
     background-color: @background;
