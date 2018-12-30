@@ -1,0 +1,13 @@
+########## Autolaunch ##########
+# Enable tapping, YMMV
+exec --no-startup-id xinput set-prop 14 307 1
+
+# Enable network manager 
+exec --no-startup-id nm-applet
+
+# Configure xrandr for 2 monitors, top to bottom
+exec --no-startup-id xrandr --output VIRTUAL1 --off --output eDP1 --mode 1920x1080 --pos 0x1080 --rotate normal --output DP1 --off --output HDMI2 --off --output HDMI1 --mode 1920x1080 --pos 0x0 --rotate normal --output DP2 --off
+exec --no-startup-id nitrogen --restore
+
+# dunst
+exec --no-startup-id dunst -config ~/.config/.dunstrc
