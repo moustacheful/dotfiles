@@ -1,5 +1,5 @@
 build :
-	npx config-templates --path=./templates --data=data.json --dest=.config
+	npx config-dye --path=./templates --data=data.json --dest=.config
 
 install :
 	cp -r ./.config ~/
