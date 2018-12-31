@@ -16,6 +16,8 @@ My configuration files for i3, rofi, dunst.
 
 ```bash
 git clone https://github.com/moustacheful/dotfiles.git --recurse-submodules
+cd dotfiles
+make install
 ```
 
 ### `Makefile` tasks
