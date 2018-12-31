@@ -22,12 +22,12 @@ bar {
         separator_symbol "|"
         colors {
                 background $background
-                statusline {{background | lighten(3) | hex}}
+                statusline {{background | lighten(4) | hex}}
                 separator  {{background | lighten(1.5) | hex}}
 
                 focused_workspace  $accent $accent $foreground
                 active_workspace   $accent $background $accent
-                inactive_workspace $background $background {{light}}
+                inactive_workspace $background $background {{light | darken(0.4) | hex}}
                 binding_mode       $accent $background {{light}}
                 urgent_workspace   $accent $background $accent
         }

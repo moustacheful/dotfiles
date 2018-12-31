@@ -194,12 +194,12 @@ bar {
         separator_symbol "|"
         colors {
                 background $background
-                statusline #888888
+                statusline #AAAAAA
                 separator  #555555
 
                 focused_workspace  $accent $accent $foreground
                 active_workspace   $accent $background $accent
-                inactive_workspace $background $background #eaeaea
+                inactive_workspace $background $background #8C8C8C
                 binding_mode       $accent $background #eaeaea
                 urgent_workspace   $accent $background $accent
         }
