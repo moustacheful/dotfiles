@@ -1,8 +1,8 @@
 {
-  "accent": "#f4d341",
+  "accent": "#ff0048",
   "background": "#222222",
   "light": "#eaeaea",
   "danger": "#a54242",
-  "useGaps": false,
-  "fontSize": 15
+  "useGaps": true,
+  "fontSize": 13
 }
