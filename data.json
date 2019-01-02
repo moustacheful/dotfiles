@@ -2,6 +2,7 @@
   "accent": "#f4d341",
   "background": "#222222",
   "light": "#eaeaea",
-  "danger": "#A54242",
-  "useGaps": true
+  "danger": "#a54242",
+  "useGaps": false,
+  "fontSize": 15
 }
