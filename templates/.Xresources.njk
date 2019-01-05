@@ -2,7 +2,7 @@
 
 URxvt*depth: 24
 URxvt*geometry: 100x25
-URxvt.borderColor: #252525
+URxvt.borderColor: {{background}}
 URxvt.internalBorder: 15
 
 ! -- scrollbar
@@ -13,9 +13,11 @@ URxvt.scrollTtyOutput: false
 URxvt.scrollWidthBuffer: true
 URxvt.scrollTtyKeypress: true
 
+URxvt.fading: 30
+
 ! -- login shell
 
-URxvt.loginShell: false
+URxvt.loginShell: true
 
 ! -- extensions
 URxvt.perl-ext-common: default,matcher
@@ -25,7 +27,7 @@ URxvt.matcher.rend.0: Uline Bold fg5
 
 ! -- font
 
-URxvt.font: xft:Roboto Mono:pixelsize=20
+URxvt.font: xft:Roboto Mono:pixelsize={{fontSize}}
 
 ! black
 URxvt.color0: #303030
@@ -52,5 +54,5 @@ URxvt.color14: #4bb8fd
 URxvt.color7: #f2f2f2
 URxvt.color15: #fefefe
 
-URxvt.background: #252525
+URxvt.background: {{background}}
 URxvt.foreground: 15
