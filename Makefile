@@ -1,7 +1,5 @@
 build :
-	npx config-dye --path=./templates --data=data.json --dest=.config
+	npx config-dye --path=./templates --data=data.json --dest=./home
 
 install :
-	cp -r ./.config ~/
-	cp -r ./bin ~/
-	cp ./.myrmidon-tasks.json ~/
+	cp -r ./home/. ~/
