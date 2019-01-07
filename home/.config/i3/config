@@ -4,13 +4,13 @@
 
 # Variable setting
 set $mod Mod4
-set $accent #ff0048
-set $background #222222
-set $foreground #222222
+set $accent #25B0BC
+set $background #1c1e26
+set $foreground #1c1e26
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango: Roboto Mono 17px
+font pango: Roboto Mono 13px
 
 ########## Autolaunch ##########
 # Enable tapping, YMMV
@@ -27,7 +27,7 @@ exec --no-startup-id nitrogen --restore
 exec --no-startup-id dunst -config ~/.config/.dunstrc
 ########## Keybindings ##########
 bindsym $mod+p exec ~/bin/myrmidon/myrmidon.sh
-bindsym $mod+l exec i3lock
+bindsym $mod+l exec i3lock -c 1c1e26
 
 ### Backlight ###
 # Note: If light doesn't work, install xbacklight and 1) uncomment the two lines below.
@@ -45,7 +45,7 @@ bindsym XF86AudioNext exec playerctl next
 
 ### Other ###
 bindsym Print exec scrot -q 100
-bindsym $mod+g gaps inner all set 1
+# bindsym $mod+g gaps inner all set 1
 
 
 ### Sound ###
@@ -187,6 +187,22 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+
+mode "resize-gaps" {
+        bindsym Right gaps inner current plus 5
+        bindsym Left gaps inner current minus 5
+        bindsym Up gaps outer current plus 5
+        bindsym Down gaps outer current minus 5
+        
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym $mod+r mode "default"
+
+}
+
+bindsym $mod+g mode "resize-gaps"
+
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
@@ -194,8 +210,8 @@ bar {
         separator_symbol "|"
         colors {
                 background $background
-                statusline #AAAAAA
-                separator  #555555
+                statusline #979DB3
+                separator  #464B5F
 
                 focused_workspace  $accent $accent $foreground
                 active_workspace   $accent $background $accent
@@ -207,7 +223,7 @@ bar {
 
 ########## Styling ##########
 
-client.focused          $accent $accent $foreground #FFB3C8 $accent
+client.focused          $accent $accent $foreground #94E3EA $accent
 client.focused_inactive $background $background $accent $background
 client.unfocused        $background $background $accent #ff0000
 client.urgent           $accent $background $accent $accent
@@ -221,4 +237,9 @@ for_window [title="Preferences$"] floating enable
 for_window [title="^RIP"] floating disable
 for_window [title="TickTick$"] floating disable
 
+
+for_window [class="^.*"] border pixel 1
+smart_borders no_gaps
+smart_gaps on
+gaps inner 20
 

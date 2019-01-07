@@ -2,7 +2,7 @@
 
 URxvt*depth: 24
 URxvt*geometry: 100x25
-URxvt.borderColor: #222222
+URxvt.borderColor: #1c1e26
 URxvt.internalBorder: 15
 
 ! -- scrollbar
@@ -27,7 +27,7 @@ URxvt.matcher.rend.0: Uline Bold fg5
 
 ! -- font
 
-URxvt.font: xft:Roboto Mono:pixelsize=17
+URxvt.font: xft:Roboto Mono:pixelsize=13
 
 ! black
 URxvt.color0: #303030
@@ -42,7 +42,7 @@ URxvt.color10: #7bc91f
 URxvt.color3: #ffc005
 URxvt.color11: #ffd00a
 ! blue
-URxvt.color4: #004f9e
+URxvt.color4: #0071ff
 URxvt.color12: #0071ff
 ! magenta
 URxvt.color5: #ec0048
@@ -54,5 +54,5 @@ URxvt.color14: #4bb8fd
 URxvt.color7: #f2f2f2
 URxvt.color15: #fefefe
 
-URxvt.background: #222222
+URxvt.background: #1c1e26
 URxvt.foreground: 15

@@ -5,30 +5,30 @@
  ***********************************************/
 
 * {
-    selected-normal-foreground:  rgb(34, 34, 34);
+    selected-normal-foreground:  rgb(28, 30, 38);
     foreground:                  rgb(234, 234, 234);
     normal-foreground:           @foreground;
-    alternate-normal-background: rgb(37, 37, 37);
-    selected-urgent-foreground:  #222222;
+    alternate-normal-background: rgb(31, 33, 42);
+    selected-urgent-foreground:  #1c1e26;
     urgent-foreground:           rgb(234, 234, 234);
-    alternate-urgent-background: rgb(44, 44, 44);
-    active-foreground:           rgb(255, 0, 72);
+    alternate-urgent-background: rgb(36, 39, 49);
+    active-foreground:           rgb(37, 176, 188);
     lightbg:                     rgb(234, 234, 234);
-    selected-active-foreground:  #222222;
-    alternate-active-background: rgb(44, 44, 44);
-    background:                  rgb(34, 34, 34);
+    selected-active-foreground:  #1c1e26;
+    alternate-active-background: rgb(36, 39, 49);
+    background:                  rgb(28, 30, 38);
     alternate-normal-foreground: @foreground;
     normal-background:           @background;
-    selected-normal-background:  rgb(255, 0, 72);
+    selected-normal-background:  rgb(37, 176, 188);
     spacing:                     2;
-    separatorcolor:              rgb(34, 34, 34);
-    urgent-background:           rgb(34, 34, 34);
+    separatorcolor:              rgb(28, 30, 38);
+    urgent-background:           rgb(28, 30, 38);
     selected-urgent-background:  rgb(165, 66, 66);
     alternate-urgent-foreground: @urgent-foreground;
-    background-color:            rgb(34, 34, 34);
+    background-color:            rgb(28, 30, 38);
     alternate-active-foreground: @active-foreground;
-    active-background:           rgb(34, 34, 34);
-    selected-active-background:  rgb(255, 0, 72);
+    active-background:           rgb(28, 30, 38);
+    selected-active-background:  rgb(37, 176, 188);
 }
 #window {
     background-color: @background;

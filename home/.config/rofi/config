@@ -1,5 +1,5 @@
 rofi.combi-modi: window,drun
-rofi.font: Roboto Mono 13
+rofi.font: Roboto Mono 9
 rofi.modi: combi
 rofi.theme: theme
 rofi.location: 2

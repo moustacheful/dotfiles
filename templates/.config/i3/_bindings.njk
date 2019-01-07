@@ -1,6 +1,6 @@
 ########## Keybindings ##########
 bindsym $mod+p exec ~/bin/myrmidon/myrmidon.sh
-bindsym $mod+l exec i3lock
+bindsym $mod+l exec i3lock -c {{background.replace('#', '')}}
 
 ### Backlight ###
 # Note: If light doesn't work, install xbacklight and 1) uncomment the two lines below.
@@ -18,7 +18,7 @@ bindsym XF86AudioNext exec playerctl next
 
 ### Other ###
 bindsym Print exec scrot -q 100
-bindsym $mod+g gaps inner all set 1
+# bindsym $mod+g gaps inner all set 1
 
 
 ### Sound ###
@@ -159,3 +159,18 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
+
+
+mode "resize-gaps" {
+        bindsym Right gaps inner current plus 5
+        bindsym Left gaps inner current minus 5
+        bindsym Up gaps outer current plus 5
+        bindsym Down gaps outer current minus 5
+        
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym $mod+r mode "default"
+
+}
+
+bindsym $mod+g mode "resize-gaps"
