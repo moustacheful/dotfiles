@@ -2,7 +2,7 @@
     font = "Roboto 10"
     allow_markup = yes
     format = "<b>%s</b>\n%b"
-    geometry = "350x5-10-40"
+    geometry = "350x5-20+20"
     show_age_threshold = 60
     word_wrap = yes
     ignore_newline = no
